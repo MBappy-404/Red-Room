@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title> The Red Room 💀 </title>
+</head>
+
+<style>
+     body {
+          background-color: black;
+     }
+
+     h1 {
+          text-align: center;
+          margin-top: 300px;
+          font-family: Sans-Serif;
+          font-size: 100px;
+          display: none;
+          color: White;
+     }
+
+     h3 {
+          color: gold;
+          text-align: center;
+          margin-top: 100px;
+          font-family: Sans-Serif;
+          font-size: 20px;
+     }
+
+     button {
+          background: gold;
+          padding: 10px 30px;
+          font-size: 40px;
+          width: 200px;
+          margin-top: 100px;
+          height: 200px;
+          border: none;
+          border-radius: 50%;
+          margin-left: 70px;
+
+     }
+
+     button:hover {
+          box-shadow: 0px 0px 3000px 200px red;
+     }
+
+     #trap {
+          color: white;
+          font-size: 30px;
+          text-align: center;
+          margin-top: 300px;
+          display: none;
+     }
+
+     #wait {
+          display: none;
+          font-size: 30px;
+          color: white;
+          text-align: center;
+          margin-top: 50px;
+     }
+</style>
+
+<body>
+
+     <h2 id="wait">Wait...</h2> <br>
+     <h1 id="demo">10</h1>
+     <h5 id="trap"> ☠️Its A Trap☠️ <br> <br>
+          Your Device is Crash ⚠️
+     </h5>
+     <h3 id="hack"> ☠️ Click Start & Go Red Room ☠️ </h3>
+     <button id="start">Start</button>
+
+     <script>
+
+          document.getElementById("start").addEventListener("click", function () {
+
+               let names = prompt(`
+          💀STOP KID💀 
+          
+           What is Your Name..⚠️`)
+
+               let age = prompt(`       "" ${names} ""   be   Alert..⚠️
+
+         Enter Your Age.....`)
+
+               if (age <= 20) {
+                    alert(`    "" ${names} "" You Are   Small Kid..Please Try Again Few Years Letter ⚠️
+        
+        ("Age Required  20+  ")
+        
+        -- Send By Anonymous💀`);
+
+
+               }
+               else {
+                    confirm(`    Hey🙋‍" ${names} "..Congratulations🎉
+       
+         You Are selected To Go.
+        
+        Now You Are Going To a 
+        
+        °°Anonymous Place°°
+        
+        Its Can Risk Your Life💀
+        
+       And Harmfully For Your Device
+        
+        
+        
+        ---send by Anonymous☠️ `)
+                    var x = 10;
+
+                    var myInterval = setInterval(function () {
+                         // adds 10 to x
+                         x -= 1;
+
+                         document.getElementById("demo").innerHTML = x;
+
+                         if (x === 0) {
+
+                              clearInterval(myInterval);
+                              window.navigator.vibrate([300, 100, 200, 50, 300]);
+                              document.body.style.backgroundColor = "red";
+                              const active = document.getElementById("demo");
+                              active.style.display = "none";
+                              const trap = document.getElementById("trap");
+                              trap.style.display = "block";
+                              window.navigator.vibrate(100000);
+                              const wait = document.getElementById('wait');
+                              wait.style.display = 'none';
+
+                         }
+
+                    }, 1000);
+
+
+               }
+
+               const active = document.getElementById("demo");
+               active.style.display = "block";
+
+               const remove = document.getElementById("hack");
+               remove.style.display = "none";
+
+               const start = document.getElementById("start");
+               start.style.display = "none";
+
+
+               if (x === 10) {
+                    document.body.style.backgroundColor = "#00008b";
+                    const wait = document.getElementById('wait');
+                    wait.style.display = 'block';
+
+               };
+
+          });
+
+
+
+     </script>
+</body>
+
+</html>
